@@ -1,0 +1,163 @@
+/* =========================
+   Reset
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Root Font
+========================= */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* =========================
+   Full Height
+========================= */
+
+html,
+body {
+  height: 100%;
+}
+
+/* =========================
+   Body
+========================= */
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: inherit;
+
+  background: #ffffff;
+  color: #222;
+
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   React Root
+========================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   Links & Buttons
+========================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* =========================
+   Page Container
+========================= */
+
+.page-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* =========================
+   Sticky Footer Layout
+========================= */
+
+.app-container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}
+
+/* =========================
+   Light / Dark Theme
+========================= */
+
+body.light {
+  background: #ffffff;
+  color: #222;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* =========================
+   Navbar Dark Mode
+========================= */
+
+body.dark .saas-navbar {
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark .nav-menu li,
+body.dark .login-btn,
+body.dark .user-name,
+body.dark .nav-menu li a {
+  color: #ffffff;
+}
+
+body.dark .contact-btn {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+body.dark .contact-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* =========================
+   Forms (Optional Improve)
+========================= */
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  outline: none;
+}
+
+/* =========================
+   Scrollbar (Optional)
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+

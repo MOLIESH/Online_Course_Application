@@ -1,0 +1,169 @@
+/* ================= AUTH LAYOUT ================= */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* ================= CARD ================= */
+
+.auth-card {
+  width: 900px;
+  height: 480px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+
+  display: flex;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+
+/* ================= LEFT PANEL ================= */
+
+.auth-left {
+  width: 40%;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+  text-align: center;
+}
+
+
+.auth-left h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+
+.auth-left p {
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+
+.auth-left a {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+/* ================= RIGHT PANEL ================= */
+
+.auth-right {
+  width: 60%;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* ================= FORM ================= */
+
+.auth-right h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+
+.auth-form {
+  width: 100%;
+}
+
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 14px;
+
+  margin-bottom: 15px;
+
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+
+.auth-form input:focus {
+  border-color: #2563eb;
+}
+
+
+/* ================= BUTTON ================= */
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.auth-form button:hover {
+  background: #1d4ed8;
+}
+
+
+.auth-form button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+
+/* ================= ERROR ================= */
+
+.auth-error {
+  color: red;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+  .auth-card {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .auth-left,
+  .auth-right {
+    width: 100%;
+  }
+
+}
